@@ -1,0 +1,151 @@
+/* Variáveis de cores para reaproveitamento */
+:root {
+  --cor-fundo: #0c0c1e;
+  --cor-primaria: #4b1e6e;
+  --cor-caixa: #6c3ea1;
+  --cor-secundaria: #9e83da;
+  --cor-destaque: #a060e8c4;
+  --cor-hover: #8884d8;
+  --texto-branco: #ffffff;
+  --cor-menu-bg: #532B77;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('./assets/FUNDO.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: var(--texto-branco);
+}
+footer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.botao-voltar:hover {
+  transform: scale(1.1);
+}
+
+header {
+  background-color: var(--cor-primaria);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo { height: 50px; }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #2e1148;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active { background-color: var(--cor-hover); }
+
+.titulo {
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Georgia', serif;
+  margin: 90px 0 40px 0;
+  color: white;
+  text-shadow: 2px 2px 8px #000;
+}
+
+
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.conteudo.invertido {
+  flex-direction: row-reverse;
+}
+
+.caixa-texto {
+  background-color: var(--cor-caixa);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 450px;
+  box-shadow: 0 0 10px #000;
+  flex: 1;
+}
+
+.imagem {
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+}
+
+/* Box informativos */
+.box-informativa {
+  background-color: var(--cor-caixa);
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+}
+
+.box-informativa h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: var(--texto-branco);
+}
+
+/* Destaques */
+.box-informativa.destaque {
+  background-color: var(--cor-destaque);
+}
+
+.box-informativa.secundaria {
+  background-color: var(--cor-secundaria);
+}
+
+/* Botão de voltar */
+footer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.botao-voltar {
+  background-color: var(--texto-branco);
+  color: var(--cor-caixa);
+  font-size: 24px;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s;
+}
+
+.botao-voltar:hover {
+  transform: scale(1.1);
+}  

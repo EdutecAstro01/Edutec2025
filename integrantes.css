@@ -1,0 +1,157 @@
+:root {
+  --roxo-escuro: #4b1e6e;
+  --roxo-claro: #8884d8;
+  --preto: #000000;
+  --branco: #ffffff;
+  --roxo: #a574f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('./assets/FUNDO.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--branco);
+}
+
+header {
+  background-color: var(--roxo-escuro);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #2e1148;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: var(--roxo-claro);
+}
+
+main {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Georgia', serif;
+  margin: 40px 0 20px 0;
+  margin-bottom: 40px;
+  color: white;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: var(--roxo);
+  padding: 15px;
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 12px #000;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.instagram-link {
+  display: block;
+  margin-top: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  padding: 6px;
+  border-radius: 8px;
+  background-color: #7707c2;
+  transition: background 0.3s;
+}
+
+.instagram-link:hover {
+  background-color: #ab10b9;
+}
+
+.reclame {
+  margin: 80px auto 40px auto; 
+  padding: 25px;
+  max-width: 500px;
+  text-align: center;
+  background: rgba(75, 30, 110, 0.8); 
+  border: 2px solid var(--roxo-claro);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.reclame h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--roxo-claro); 
+  text-shadow: 1px 1px 6px #000;
+}
+
+.reclame p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: var(--branco);
+}
+
+.contato-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--branco);
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--roxo-claro), var(--roxo-escuro));
+  transition: transform 0.5s ease, background 0.4s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.contato-link:hover {
+  background: linear-gradient(135deg, var(--roxo-escuro), var(--roxo-claro));
+  transform: scale(1.05);
+}

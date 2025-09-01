@@ -1,0 +1,128 @@
+:root {
+    
+    --cor-principal: #532B77;
+    --cor-caixa-texto: #6c3ea1;
+    --cor-menu-bg: #532B77;
+    --cor-texto: #ffffff;
+    --cor-link-bg: #333;
+    --cor-borda-mapa: #ccc;
+    --cor-hover: #8884d8;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('./assets/FUNDO.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+  }
+  
+  header {
+    background-color: var(--cor-menu-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #2e1148;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: var(--cor-hover);
+  }
+  
+  .intro {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .astronauta {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .titulo {
+    font-size: 48px;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .btn-mapas {
+    margin-top: 60px; 
+    background: linear-gradient(135deg, var(--cor-menu-bg), var(--cor-hover));
+    transition: transform 0.5s ease, background 0.4s;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    color: var(--cor-texto);
+    border-radius: 10px;
+  }
+
+  .btn-mapas:hover {
+    background: linear-gradient(135deg, var(--cor-hover), var(--cor-caixa-texto));
+    transform: scale(1.05);
+  
+  }
+  
+  .mapa-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .caixa-texto {
+    background-color: var(--cor-caixa-texto);
+    padding: 20px;
+    border-radius: 12px;
+    width: 50%;
+  }
+  
+  .mapa-img {
+    width: 20%;
+    border-radius: 50%;
+    border: 3px solid var(--cor-borda-mapa);
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .botao-voltar {
+    background-color: var(--cor-texto);
+    color: var(--cor-caixa-texto);
+    font-size: 24px;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #000;
+    transition: transform 0.3s;
+  }
+  
+  .botao-voltar:hover {
+    transform: scale(1.1);
+  }

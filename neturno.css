@@ -1,0 +1,62 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('./assets/FUNDO.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Imagem do planeta */
+.planet-img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
+
+/* Cartões de informação */
+.info-card {
+    background-color: rgba(138, 43, 226, 0.9);
+    color: white;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Destaque */
+.destaque {
+    background-color: rgba(106, 90, 205, 0.95);
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .planet-img {
+        width: 150px;
+    }
+
+    .info-card {
+        width: 90%;
+    }
+}
