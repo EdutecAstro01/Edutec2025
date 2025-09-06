@@ -36,7 +36,7 @@ button {
   border: none;
   border-radius: 1.5rem;
   cursor: pointer;
-  font-size: 0.9rem;   
+  font-size: 0.9rem;     
   transition: transform 0.3s, background 0.3s;
 }
 
@@ -45,23 +45,23 @@ button {
   transform: scale(1.08);
 }
 
-.mercurio {
+.netuno {
   text-align: center;
   margin: 3rem 0;
 }
 
-.mercurio img {
-  width: 40rem;
+.netuno img {
+  width: 30rem;
   height: auto;
   border-radius: 50%;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.mercurio img:hover {
+.netuno img:hover {
   transform: scale(1.08);
 }
 
-.mercurio h2 {
+.netuno h2 {
   margin-top: 0.8rem;
   font-style: italic;
   font-size: 1.8rem;
@@ -88,10 +88,10 @@ button {
 
 .paragrafo {
   background: #6c3ea1;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 1rem;   
   border-radius: 0.9rem;
   color: #ddd;
-  font-size: 0.9rem;
+  font-size: 0.9rem;      
   line-height: 1.3rem;
 }
 

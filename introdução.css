@@ -1,4 +1,3 @@
-/* Variáveis de cores para reaproveitamento */
 :root {
   --cor-fundo: #0c0c1e;
   --cor-primaria: #4b1e6e;
@@ -9,7 +8,6 @@
   --texto-branco: #ffffff;
   --cor-menu-bg: #532B77;
 }
-
 
 * {
   margin: 0;
@@ -23,10 +21,11 @@ body {
   font-family: 'Arial', sans-serif;
   color: var(--texto-branco);
 }
+
 footer {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.25rem;
+  right: 1.25rem;
 }
 
 .botao-voltar:hover {
@@ -35,25 +34,32 @@ footer {
 
 header {
   background-color: var(--cor-primaria);
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo { height: 50px; }
+.logo { 
+  height: 3.125rem; 
+  transition: transform 0.5s;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+}
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 1.5625rem;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
-  padding: 8px 12px;
-  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5rem;
   background-color: #2e1148;
   transition: background 0.3s;
 }
@@ -63,22 +69,21 @@ nav ul li a.active { background-color: var(--cor-hover); }
 
 .titulo {
   text-align: center;
-  font-size: 48px;
+  font-size: 3rem;
   font-family: 'Georgia', serif;
-  margin: 90px 0 40px 0;
+  margin: 5.625rem 0 2.5rem 0;
   color: white;
-  text-shadow: 2px 2px 8px #000;
+  text-shadow: 0.125rem 0.125rem 0.5rem #000;
 }
-
 
 .conteudo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
+  gap: 1.875rem;
+  max-width: 62.5rem;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
   flex-wrap: wrap;
 }
 
@@ -88,33 +93,33 @@ nav ul li a.active { background-color: var(--cor-hover); }
 
 .caixa-texto {
   background-color: var(--cor-caixa);
-  padding: 20px;
-  border-radius: 15px;
-  max-width: 450px;
-  box-shadow: 0 0 10px #000;
+  padding: 1.25rem;
+  border-radius: 0.9375rem;
+  max-width: 28.125rem;
+  box-shadow: 0 0 0.625rem #000;
   flex: 1;
 }
 
 .imagem {
-  max-width: 350px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px #000;
+  max-width: 21.875rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 0.625rem #000;
 }
 
 /* Box informativos */
 .box-informativa {
   background-color: var(--cor-caixa);
-  padding: 20px;
-  margin: 30px auto;
-  max-width: 800px;
-  border-radius: 15px;
+  padding: 1.25rem;
+  margin: 1.875rem auto;
+  max-width: 50rem;
+  border-radius: 0.9375rem;
   text-align: center;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 0.625rem #000;
 }
 
 .box-informativa h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
   font-style: italic;
   color: var(--texto-branco);
 }
@@ -131,21 +136,21 @@ nav ul li a.active { background-color: var(--cor-hover); }
 /* Botão de voltar */
 footer {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.25rem;
+  right: 1.25rem;
 }
 
 .botao-voltar {
   background-color: var(--texto-branco);
   color: var(--cor-caixa);
-  font-size: 24px;
-  padding: 8px 12px;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.75rem;
   text-decoration: none;
   border-radius: 50%;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 0.625rem #000;
   transition: transform 0.3s;
 }
 
 .botao-voltar:hover {
   transform: scale(1.1);
-}  
+}

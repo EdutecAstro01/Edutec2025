@@ -10,48 +10,53 @@
   --cor-secundaria: #9e83da;
 }
 
-  
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-  body {
-    background: url('./assets/FUNDO.jpg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Arial', sans-serif;
-    color: var(--texto-branco);
-  }
-  footer {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-  
-  
-  
+body {
+  background: url('./assets/FUNDO.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: var(--texto-branco);
+}
+
+footer {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+}
+
 header {
   background-color: var(--cor-primaria);
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;  
 }
 
-.logo { height: 50px; }
+.logo {
+  height: 3.125rem;
+  transition: transform 0.5s;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+}
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 1.5625rem;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
-  padding: 8px 12px;
-  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5rem;
   background-color: #2e1148;
   transition: background 0.3s;
 }
@@ -61,54 +66,53 @@ nav ul li a.active { background-color: var(--cor-hover); }
 
 .titulo {
   text-align: center;
-  font-size: 48px;
+  font-size: 3rem;
   font-family: 'Georgia', serif;
-  margin: 90px 0 40px 0;
+  margin: 5.625rem 0 2.5rem 0;
   color: white;
-  text-shadow: 2px 2px 8px #000;
+  text-shadow: 0.125rem 0.125rem 0.5rem #000;
 }
 
 .conteudo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.25rem;
   flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 100px auto;
-  padding: 0 20px;
+  max-width: 62.5rem;
+  margin: 6.25rem auto;
+  padding: 0 1.25rem;
 }
 
 .conteudo.invertido { flex-direction: row-reverse; }
 
 .caixa-texto {
   background-color: var(--cor-caixa);
-  padding: 20px;
-  border-radius: 15px;
-  max-width: 600px;
-  flex: 1;
+  padding: 1.25rem;
+  border-radius: 0.9375rem;
+  max-width: 37.5rem;
 }
 
 .imagem {
-  width: 300px;
-  border-radius: 10px;
+  width: 18.75rem;
+  border-radius: 0.625rem;
 }
 
 /* Botão de voltar */
 footer {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.25rem;
+  right: 1.25rem;
 }
 
 .botao-voltar {
   background-color: var(--texto-branco);
   color: var(--cor-caixa);
-  font-size: 24px;
-  padding: 8px 12px;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.75rem;
   text-decoration: none;
   border-radius: 50%;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 0.625rem #000;
   transition: transform 0.3s;
 }
 

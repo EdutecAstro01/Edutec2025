@@ -1,53 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Urano</title>
-    <link rel="stylesheet" href="urano.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="urano.css" />
 </head>
 <body>
-    <header>
-        <h1>Urano</h1>
-        <img src="./assets/Urano.png" alt="Urano" class="urano-img">
-    </header>
 
-    <main>
-        <section class="info-card destaque">
-            <h2>Você sabia?</h2>
-            <p>Terceiro maior planeta do sistema solar e sétimo planeta a partir do Sol, Urano é um planeta gasoso que apresenta médias de temperatura de -185°C e possui 27 satélites.
-                Possui uma característica interessante tocante ao seu eixo de rotação com quase noventa graus em relação com o plano de sua órbita, que por sua vez é muito extensa.</p>
-        </section>
+<section class="Sistema">
 
-        <section class="info-card">
-            <h3>Forma</h3>
-            <p>A Terra é um geoide, com uma superfície irregular, que não é uma esfera perfeita.</p>
-        </section>
 
-        <section class="info-card">
-            <h3>Tamanho</h3>
-            <p>O diâmetro equatorial da Terra é de 12.756 km.</p>
-        </section>
+  <button onclick="window.location.href='./sistema.html'">Voltar para o sistema</button>
 
-        <section class="info-card">
-            <h3>Massa</h3>
-            <p>A massa da Terra é de 5,972 × 10²⁴ kg.A massa da Terra é de 5,972 × 10²⁴ kg.</p>
-        </section>
+  <div class="urano">
+    <img src="./assets/Urano.png" alt="Urano" />
+    <h2>Urano</h2>
+  </div>
 
-        <section class="info-card">
-            <h3>Volume</h3>
-            <p>O volume da Terra é de 1,08321 × 10¹² km³.</p>
-        </section>
+  <div class="parte-direita">
+    <div class="titulo"><h3>Você sabia?</h3></div>
+    <div class="paragrafo">
+      <p><br>
+        Terceiro maior planeta do Sistema Solar e sétimo a partir do Sol, Urano é um
+        gigante de gelo com temperatura média de cerca de −185°C e 27 satélites.
+        Seu eixo de rotação é inclinado ~90°, como se “girasse de lado”.
+      </p>
+    </div>
+  </div>
 
-        <section class="info-card">
-            <h3>Atmosfera</h3>
-            <p>A Terra possui uma atmosfera que a protege de impactos e que é composta por diferentes camadas, como a troposfera, estratosfera e ionosfera.</p>
-        </section>
+  <div class="parte-esquerda">
+    <div class="titulo"><h3>Forma</h3></div>
+    <div class="paragrafo">
+      <br><p>Esférica, com leve achatamento nos polos.</p>
+    </div>
+  </div>
 
-        <section class="info-card">
-            <h3>Camadas Internas</h3>
-            <p>A Terra é formada por três camadas principais: crosta, manto e núcleo.</p>
-        </section>
-    </main>
+  <div class="parte-direita">
+    <div class="titulo"><h3>Tamanho</h3></div>
+    <div class="paragrafo">
+     <br><p>Diâmetro equatorial de aproximadamente 50.724 km.</p>
+    </div>
+  </div>
+
+  <div class="parte-esquerda">
+    <div class="titulo"><h3>Massa</h3></div>
+    <div class="paragrafo">
+      <p>8,68 × 10²⁵ kg.</p>
+    </div>
+  </div>
+
+  <div class="parte-direita">
+    <div class="titulo"><h3>Volume</h3></div>
+    <div class="paragrafo">
+      <p>6,83 × 10¹³ km³.</p>
+    </div>
+  </div>
+
+  <div class="parte-esquerda">
+    <div class="titulo"><h3>Atmosfera</h3></div>
+    <div class="paragrafo">
+      <br><p>Principalmente hidrogênio e hélio, com metano que dá a cor azul-esverdeada.</p>
+    </div>
+  </div>
+
+  <div class="parte-direita">
+    <div class="titulo"><h3>Camadas Internas</h3></div>
+    <div class="paragrafo">
+      <br><p>Núcleo rochoso pequeno, manto de “gelos” (água, amônia, metano) e camada gasosa externa.</p>
+    </div>
+  </div>
+
+</section>
+
 </body>
 </html>

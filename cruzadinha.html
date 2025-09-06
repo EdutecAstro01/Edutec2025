@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cruzadinha Astro</title>
+  <link rel="stylesheet" href="cruzadinha.css">
+  <script src="cruzadinha.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <img src="./assets/Barbra.png" alt="Astro Logo" class="logo">
+
+    <h2>Cruzadinha Astro</h2>
+
+    <!-- Indicador de progresso -->
+    <div class="progresso">
+      Pergunta <span id="perguntaAtual">1</span> de <span id="totalPerguntas">6</span>
+    </div>
+
+    <!-- Cruzadinha individual -->
+    <div class="cruzadinha" id="cruzadinha"></div>
+
+    <!-- Dica -->
+    <div class="pergunta">
+      <h3 id="dica"></h3>
+    </div>
+
+    <!-- Botões -->
+    <div class="botoes">
+      <button id="verificarBtn">Verificar</button>
+      <button id="proximaBtn">Próxima Pergunta</button>
+    </div>
+
+    <div id="resultado"></div>
+  </div>
+</body>
+</html>
