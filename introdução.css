@@ -40,6 +40,8 @@ header {
   justify-content: space-between;
 }
 
+/* Logo de cima*/
+
 .logo { 
   height: 3.125rem; 
   transition: transform 0.5s;
@@ -48,6 +50,8 @@ header {
 .logo:hover {
   transform: scale(1.08);
 }
+
+/* Barra de navegação*/
 
 nav ul {
   list-style: none;
@@ -140,6 +144,8 @@ footer {
   right: 1.25rem;
 }
 
+/* Botão de voltar */
+
 .botao-voltar {
   background-color: var(--texto-branco);
   color: var(--cor-caixa);
@@ -150,6 +156,8 @@ footer {
   box-shadow: 0 0 0.625rem #000;
   transition: transform 0.3s;
 }
+
+/* Botão de voltar */
 
 .botao-voltar:hover {
   transform: scale(1.1);

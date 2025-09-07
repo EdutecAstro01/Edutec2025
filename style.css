@@ -25,6 +25,8 @@ header {
   padding: 0.625rem 1.25rem; 
 }
 
+/* Logo de cima*/
+
 .logo-header {
   height: 3.125rem; 
   transition: transform 0.5s;
@@ -35,6 +37,8 @@ header {
   display: block;
   margin: -18.75rem auto 0 auto; 
 }
+
+/* Barra de navegação*/
 
 nav ul {
   list-style: none;
@@ -122,11 +126,15 @@ nav ul li a.active {
   border: 0.1875rem solid var(--cor-borda-mapa); 
 }
 
+/* Botão de voltar */
+
 footer {
   position: fixed;
   bottom: 1.25rem; 
   right: 1.25rem; 
 }
+
+/* Botão de voltar */
 
 .botao-voltar {
   background-color: var(--cor-texto);
@@ -138,6 +146,8 @@ footer {
   box-shadow: 0 0 0.625rem #000; 
   transition: transform 0.3s;
 }
+
+/* Botão de voltar */
 
 .botao-voltar:hover {
   transform: scale(1.1);

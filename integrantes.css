@@ -28,6 +28,8 @@ header {
   justify-content: space-between;  
 }
 
+/* Logo de cima*/
+
 .logo {
   height: 3.125rem;
   transition: transform 0.5s
@@ -36,6 +38,8 @@ header {
 .logo:hover{
   transform: scale(1.08);
 }
+
+/* Barra de navegação*/
 
 nav ul {
   list-style: none;

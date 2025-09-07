@@ -23,6 +23,8 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  /* Logo de cima*/
   
   .logo {
     height: 50px;
@@ -32,6 +34,8 @@
   .logo:hover {
     transform: scale(1.08);
   }
+
+  /* Barra de navegação*/
   
   nav ul {
     list-style: none;

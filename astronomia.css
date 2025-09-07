@@ -23,6 +23,8 @@ body {
   color: var(--texto-branco);
 }
 
+/* rodapé-seção inferior */
+
 footer {
   position: fixed;
   bottom: 1.25rem;
@@ -36,6 +38,8 @@ header {
   align-items: center;
   justify-content: space-between;  
 }
+
+/* Logo de cima*/
 
 .logo {
   height: 3.125rem;
@@ -51,6 +55,8 @@ nav ul {
   display: flex;
   gap: 1.5625rem;
 }
+
+/* Barra de navegação*/
 
 nav ul li a {
   text-decoration: none;
@@ -105,6 +111,8 @@ footer {
   right: 1.25rem;
 }
 
+/* Botão de voltar */
+
 .botao-voltar {
   background-color: var(--texto-branco);
   color: var(--cor-caixa);
@@ -115,6 +123,8 @@ footer {
   box-shadow: 0 0 0.625rem #000;
   transition: transform 0.3s;
 }
+
+/* Botão de voltar */
 
 .botao-voltar:hover {
   transform: scale(1.1);
