@@ -38,7 +38,7 @@ header {
 }
 
 .logo:hover {
-  transform: scale(1.08);
+  transm: forscale(1.08);
 }
 
 /* Barra de navegação*/
@@ -147,5 +147,6 @@ footer {
 /* Botão de voltar */
 
 .botao-voltar:hover {
+  background: #a164f2;
   transform: scale(1.1);
 }

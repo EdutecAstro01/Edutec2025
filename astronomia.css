@@ -127,5 +127,6 @@ footer {
 /* Botão de voltar */
 
 .botao-voltar:hover {
+  background: #a164f2;
   transform: scale(1.1);
 }

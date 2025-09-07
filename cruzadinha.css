@@ -1,55 +1,55 @@
 body {
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center;     /* centraliza verticalmente */
-  min-height: 100vh;
+  justify-content: center;   
+  align-items: center;       
+  min-height: 100vh;        
+  margin: 0;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background: #1a0d2b;
 }
 
 .container {
   background: #2e1148;
-  border-radius: 0.9375rem; 
-  padding: 1.875rem;        
-  max-width: 31.25rem;      
+  border-radius: 0.9375rem;
+  padding: 2rem 2rem;
   width: 100%;
-  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.5); 
-  text-align: center;
-  
-  display: flex;           
-  flex-direction: column;  
-  align-items: center;     
+  max-width: 50rem;          
+  box-shadow: 0 0.25rem 0.75rem rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;       
+  position: relative;        
 }
 
-.cruzadinha {
-  display: grid;
-  grid-template-columns: repeat(10, 3.125rem); 
-  gap: 0.625rem;                              
-  justify-content: center;                     
-  margin: 1.5625rem 0;                          
-}
 
+/* Logo*/
 .logo {
-  max-width: 12.5rem;   
-  margin: 0 auto 1.25rem auto; 
-  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  max-width: 8rem;
+  height: auto;
 }
 
-.progresso {
-  font-size: 1rem;       
-  color: #ffd6ff;
-  margin-bottom: 1.25rem; 
+.logo:hover {
+  transform: scale(1.08);
 }
+
 
 .cruzadinha {
   display: grid;
-  grid-template-columns: repeat(10, 3.125rem); 
-  gap: 0.625rem;                               
-  justify-content: center;  
-  margin: 1.5625rem 0;                          
+  grid-template-columns: repeat(10, 3rem); 
+  gap: 2rem;                               
+  justify-content: center;   
+  align-items: center;       
+  margin: 2rem auto;         
 }
+
 
 .cruzadinha input {
-  width: 3.125rem;       
-  height: 3.125rem;      
+  width: 3rem;       
+  height: 3rem;      
   text-align: center;
   font-size: 1.5rem;     
   text-transform: uppercase;
@@ -58,7 +58,7 @@ body {
   background: linear-gradient(145deg, #6c3ea1, #532b77);
   color: #fff;
   font-weight: bold;
-  box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0,0,0,0.4); 
+  box-shadow: 0.125rem 0.125rem 0.3125rem rgba(255, 255, 255, 0.4); 
   transition: transform 0.2s, background 0.3s;
 }
 
@@ -68,6 +68,7 @@ body {
   background: linear-gradient(145deg, #7f4fff, #6633aa);
 }
 
+/* Botões */
 button {
   margin: 0.625rem 0.3125rem;  
   padding: 0.625rem 1.25rem;   
@@ -86,8 +87,9 @@ button:hover {
   background: linear-gradient(135deg, #9b7ede, #6c3ea1);
 }
 
+/* Resultado */
 #resultado {
-  margin-top: 0.9375rem; 
+  margin-top: 1rem; 
   font-weight: bold;
   font-size: 1.125rem;   
   color: #ffd6ff;
@@ -96,4 +98,32 @@ button:hover {
 .pergunta h3 {
   margin: 0.625rem 0;   
   color: #e0c6ff;
+}
+
+/* Mensagem final parabéns */
+.mensagem-final {
+  display: none;              
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffeb3b;
+  text-align: center;
+  text-shadow: 0 0 10px #ff4081, 0 0 20px #7c4dff;
+  animation: pulsar 1.5s infinite alternate;
+}
+
+/* Pulsar da mensagem */
+@keyframes pulsar {
+  from { transform: scale(1); opacity: 0.8; }
+  to   { transform: scale(1.2); opacity: 1; }
+}
+
+/* Botão jogar novamente */
+#reiniciarBtn {
+  margin-top: 1rem;
+  background: linear-gradient(3s, #ff9800, #e65100);
+}
+
+#reiniciarBtn:hover {
+  background: linear-gradient(3s, #ffc107, #ff5722);
 }

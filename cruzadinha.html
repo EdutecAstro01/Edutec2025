@@ -10,7 +10,9 @@
 <body>
   <div class="container">
     <!-- Logo -->
-    <img src="./assets/Barbra.png" alt="Astro Logo" class="logo">
+    <a href="index.html">
+      <img src="./assets/Barbra.png" alt="Astro Logo" class="logo">
+    </a>
 
     <h2>Cruzadinha Astro</h2>
 
@@ -33,7 +35,15 @@
       <button id="proximaBtn">Próxima Pergunta</button>
     </div>
 
+    <!-- Resultado parcial -->
     <div id="resultado"></div>
+
+    <!-- Mensagem final com botão reiniciar -->
+    <div id="mensagemFinal" class="mensagem-final">
+       Parabéns! Você concluiu a cruzadinha! 🚀
+      <br><br>
+      <button id="reiniciarBtn">🔄 Jogar Novamente</button>
+    </div>
   </div>
 </body>
 </html>

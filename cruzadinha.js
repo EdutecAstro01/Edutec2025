@@ -14,15 +14,21 @@ const dicaDiv = document.getElementById("dica");
 const resultadoDiv = document.getElementById("resultado");
 const perguntaAtualSpan = document.getElementById("perguntaAtual");
 const totalPerguntasSpan = document.getElementById("totalPerguntas");
+const mensagemFinalDiv = document.getElementById("mensagemFinal");
 
 totalPerguntasSpan.innerText = perguntas.length;
 
 function carregarPergunta() {
   resultadoDiv.innerText = "";
+  mensagemFinalDiv.style.display = "none";
   cruzadinhaDiv.innerHTML = "";
+
   const perguntaAtual = perguntas[indiceAtual];
   dicaDiv.innerText = perguntaAtual.dica;
   perguntaAtualSpan.innerText = indiceAtual + 1;
+
+  // Ajusta dinamicamente o número de colunas da grid
+  cruzadinhaDiv.style.gridTemplateColumns = `repeat(${perguntaAtual.resposta.length}, 3rem)`;
 
   for (let letra of perguntaAtual.resposta) {
     const input = document.createElement("input");
@@ -56,7 +62,16 @@ document.getElementById("proximaBtn").addEventListener("click", () => {
     carregarPergunta();
   } else {
     resultadoDiv.innerText = "Você completou todas as perguntas!";
+    mensagemFinalDiv.style.display = "block"; // mostra mensagem de parabéns
   }
+});
+
+// Botão "Jogar Novamente"
+document.getElementById("reiniciarBtn").addEventListener("click", () => {
+  indiceAtual = 0;
+  carregarPergunta();
+  resultadoDiv.innerText = "";
+  mensagemFinalDiv.style.display = "none";
 });
 
 // Carrega a primeira pergunta ao iniciar
