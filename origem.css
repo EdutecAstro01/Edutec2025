@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,7 +31,6 @@ header {
   justify-content: space-between;  
 }
 
-/* Logo de cima*/
 
 .logo {
   height: 3.125rem; 
@@ -38,10 +38,9 @@ header {
 }
 
 .logo:hover {
-  transm: forscale(1.08);
+  transform: forscale(1.08);
 }
 
-/* Barra de navegação*/
 
 nav ul {
   list-style: none;
@@ -123,7 +122,6 @@ nav ul li a.active {
   background-color: var(--cor-secundaria);
 }
 
-/* Botão de voltar */
 
 footer {
   position: fixed;
@@ -131,7 +129,6 @@ footer {
   right: 1.25rem; 
 }
 
-/* Botão de voltar */
 
 .botao-voltar {
   background-color: var(--texto-branco);
@@ -144,9 +141,7 @@ footer {
   transition: transform 0.3s;
 }
 
-/* Botão de voltar */
 
 .botao-voltar:hover {
-  background: #a164f2;
   transform: scale(1.1);
 }

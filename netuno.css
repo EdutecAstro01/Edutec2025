@@ -87,7 +87,7 @@ button {
 }
 
 .paragrafo {
-  background: #6c3ea1;
+  background: #8F85D8;
   padding: 0.8rem 1rem;   
   border-radius: 0.9rem;
   color: #ddd;
@@ -97,7 +97,7 @@ button {
 
 .parte-direita {
   max-width: 28rem;              
-  margin: 1.5rem 6rem 1.5rem auto; 
+  margin: 1.5rem 15rem 1.5rem auto; 
   position: relative;
 }
 
@@ -107,7 +107,7 @@ button {
 
 .parte-esquerda {
   max-width: 28rem;
-  margin: 1.5rem auto 1.5rem 6rem; 
+  margin: 1.5rem auto 1.5rem 15rem; 
   position: relative;
 }
 

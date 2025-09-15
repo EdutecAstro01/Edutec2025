@@ -9,40 +9,38 @@
 </head>
 <body>
   <div class="container">
-    <!-- Logo -->
+
     <a href="index.html">
       <img src="./assets/Barbra.png" alt="Astro Logo" class="logo">
     </a>
 
-    <h2>Cruzadinha Astro</h2>
+    <h2>Cruzadinha</h2>
 
-    <!-- Indicador de progresso -->
-    <div class="progresso">
-      Pergunta <span id="perguntaAtual">1</span> de <span id="totalPerguntas">6</span>
+    <div class="jogo">
+      <div class="cruzadinha" id="cruzadinha"></div>
+
+      <div class="perguntas">
+        <h3>Dicas:</h3>
+        <ol>
+          <li>Brilho distante no escuro do céu. O que sou eu?</li>
+          <li>O que estuda planetas, estrelas e todo o universo?</li>
+          <li>Sou um corpo celeste que passa rapidamente pelo céu.</li>
+          <li>Sou um elemento que brilha em joias e em peças de foguetes.</li>
+          <li>Branco como nuvem, azul como o mar, no dia fico claro.</li>
+          <li>Brilho intenso no céu e sou maior do sistema solar.</li>
+        </ol>
+      </div>
     </div>
 
-    <!-- Cruzadinha individual -->
-    <div class="cruzadinha" id="cruzadinha"></div>
-
-    <!-- Dica -->
-    <div class="pergunta">
-      <h3 id="dica"></h3>
-    </div>
-
-    <!-- Botões -->
     <div class="botoes">
       <button id="verificarBtn">Verificar</button>
-      <button id="proximaBtn">Próxima Pergunta</button>
+      <button id="reiniciarBtn">🔄 Jogar Novamente</button>
     </div>
 
-    <!-- Resultado parcial -->
     <div id="resultado"></div>
 
-    <!-- Mensagem final com botão reiniciar -->
     <div id="mensagemFinal" class="mensagem-final">
-       Parabéns! Você concluiu a cruzadinha! 🚀
-      <br><br>
-      <button id="reiniciarBtn">🔄 Jogar Novamente</button>
+      Parabéns! Você concluiu a cruzadinha! 🚀
     </div>
   </div>
 </body>

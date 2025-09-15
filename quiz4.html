@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz - Exercício 4</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d8b4f8; 
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      margin-top: 300px;
+    }
+
+    .quiz-container {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 900px;
+      height: 400px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      margin-right: -150px;
+  
+    }
+
+    .question {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .left {
+      flex: 1;
+      text-align: center;
+    }
+
+    .left img {
+      width: 320px;
+      border-radius: 10px;
+    }
+
+    .right {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      width: 120px;
+      height: 60px;
+      z-index: 2;
+    }
+
+    .logo img {
+      margin-bottom: -100px;
+    }
+
+    .options button {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #2d2240;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .options button.correct {
+      background-color: #4CAF50;
+    }
+
+    .options button.wrong {
+      background-color: #e74c3c;
+    }
+
+    .result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .quiz-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: purple;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    .proximo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -200px;
+      margin-left: -70px;
+    }
+
+    .proximo button {
+      font-weight: 500;
+      font-size: 18px;
+      height: 30px;
+      width: 40px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgb(218, 135, 218);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+  
+ 
+
+  <div class="quiz-container">
+    <div class="left">
+      <div class="question">Qual é o planeta conhecido como Planeta vermelho?</div>
+      <img src="./assets/planeta-marte 1.png" alt="Júpiter">
+    </div>
+    <div class="right">
+      <div class="options">
+        <button onclick="checkAnswer(this, false)">Júpiter</button>
+        <button onclick="checkAnswer(this, true)">Marte</button>
+        <button onclick="checkAnswer(this, false)">Vênus</button>
+        <button onclick="checkAnswer(this, false)">Saturno</button>
+      </div>
+      <div class="result"></div>
+      
+    </div>
+   
+  </div>
+
+  <img src="./assets/LOGO DO QUIZ.png" alt="" class="logo">
+
+  <div class="proximo">
+    <a href="/quiz5.html"><button>></button></a>
+  </div>
+
+  <script>
+    function checkAnswer(button, correct) {
+      let container = button.closest(".quiz-container");
+      let buttons = container.querySelectorAll("button");
+      let result = container.querySelector(".result");
+
+      buttons.forEach(btn => {
+        btn.disabled = true;
+        if (btn.innerText === "Marte") {
+          btn.classList.add("correct");
+        } else {
+          btn.classList.add("wrong");
+        }
+      });
+
+      result.innerText = correct ? " Resposta correta!" : " Resposta incorreta!";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,155 +1,172 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Astronomia</title>
+  <title>Quiz - Exercício 1</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f3f0ff; /* lilás claro */
+      background-color: #d8b4f8; 
       margin: 0;
-      padding: 20px;
+      padding: 40px;
       display: flex;
       justify-content: center;
+      margin-top: 300px;
     }
 
     .quiz-container {
-      width: 100%;
-      max-width: 900px;
-    }
-
-    .quiz-card {
       background: white;
       border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-      margin-bottom: 30px;
       padding: 20px;
-    }
-
-    .quiz-card h2 {
-      color: #5c2e91;
-      font-size: 26px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    .question {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-
-    .content {
+      width: 900px;
+      height: 400px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
+      margin-bottom: 40px;
+      margin-right: -150px;
+  
     }
 
-    .content img {
-      width: 40%;
-      max-width: 250px;
-      border-radius: 8px;
+    .question {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
     }
 
-    .options {
+    .left {
+      flex: 1;
+      text-align: center;
+    }
+
+    .left img {
+      width: 320px;
+      border-radius: 10px;
+    }
+
+    .right {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    .logo {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
-      width: 50%;
+      align-items: end;
+      justify-content: end;
+      width: 120px;
+      height: 60px;
+      z-index: 2;
     }
 
-    button {
-      padding: 12px;
+    .logo img {
+      margin-bottom: -100px;
+    }
+
+    .options button {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
       border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: #2f2f5e;
+      border-radius: 5px;
+      background-color: #2d2240;
       color: white;
+      font-weight: bold;
+      cursor: pointer;
       transition: 0.3s;
     }
 
-    button:hover {
-      opacity: 0.8;
+    .options button.correct {
+      background-color: #4CAF50;
+    }
+
+    .options button.wrong {
+      background-color: #e74c3c;
+    }
+
+    .result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .quiz-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: purple;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    .proximo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -200px;
+      margin-left: -70px;
+    }
+
+    .proximo button {
+      font-weight: 500;
+      font-size: 18px;
+      height: 30px;
+      width: 40px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgb(218, 135, 218);
+      cursor: pointer;
+      transition: 0.3s;
     }
   </style>
 </head>
 <body>
+  
+ 
+
   <div class="quiz-container">
-
-    <!-- Pergunta 1 -->
-    <div class="quiz-card">
-      <h2>Quiz</h2>
-      <p class="question">Qual o nome da primeira sonda a explorar Plutão?</p>
-      <div class="content">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Planeta Júpiter">
-        <div class="options">
-          <button onclick="checkAnswer(this, false)">Voyager 1</button>
-          <button onclick="checkAnswer(this, true)">New Horizons</button>
-          <button onclick="checkAnswer(this, false)">Cassini</button>
-          <button onclick="checkAnswer(this, false)">Pioneer 10</button>
-        </div>
-      </div>
+    <div class="left">
+      <div class="question">Qual o nome da primeira sonda a explorar Plutão? </div>
+      <img src="./assets/plutao-no-universo-o-unico-planeta-anao-do-sistema-solar 1.png" alt="Júpiter">
     </div>
-
-    <!-- Pergunta 2 -->
-    <div class="quiz-card">
-      <h2>Quiz</h2>
-      <p class="question">Qual fenômeno astronômico é causado pela passagem da Terra pela sombra da Lua?</p>
-      <div class="content">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Total_Lunar_Eclipse_2019.jpg" alt="Eclipse Lunar">
-        <div class="options">
-          <button onclick="checkAnswer(this, false)">Eclipse solar</button>
-          <button onclick="checkAnswer(this, false)">Super Nova</button>
-          <button onclick="checkAnswer(this, true)">Eclipse Lunar</button>
-          <button onclick="checkAnswer(this, false)">Auroras</button>
-        </div>
+    <div class="right">
+      <div class="options">
+        <button onclick="checkAnswer(this, false)">Voyager 1</button>
+        <button onclick="checkAnswer(this, true)">New Horizons</button>
+        <button onclick="checkAnswer(this, false)">Cassini</button>
+        <button onclick="checkAnswer(this, false)">Pioneer 10</button>
       </div>
+      <div class="result"></div>
+      
     </div>
+   
+  </div>
 
-    <!-- Pergunta 3 -->
-    <div class="quiz-card">
-      <h2>Quiz</h2>
-      <p class="question">Em que ano o homem pisou na Lua?</p>
-      <div class="content">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Apollo_11_first_step.jpg" alt="Homem na Lua">
-        <div class="options">
-          <button onclick="checkAnswer(this, false)">1986</button>
-          <button onclick="checkAnswer(this, false)">1970</button>
-          <button onclick="checkAnswer(this, true)">1969</button>
-          <button onclick="checkAnswer(this, false)">2000</button>
-        </div>
-      </div>
-    </div>
+  <img src="./assets/LOGO DO QUIZ.png" alt="" class="logo">
 
-    <!-- Pergunta 4 -->
-    <div class="quiz-card">
-      <h2>Quiz</h2>
-      <p class="question">Qual planeta é conhecido como o "Planeta Vermelho"?</p>
-      <div class="content">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Marte">
-        <div class="options">
-          <button onclick="checkAnswer(this, false)">Vênus</button>
-          <button onclick="checkAnswer(this, true)">Marte</button>
-          <button onclick="checkAnswer(this, false)">Júpiter</button>
-          <button onclick="checkAnswer(this, false)">Saturno</button>
-        </div>
-      </div>
-    </div>
-
+  <div class="proximo">
+    <a href="/quiz2.html"><button>></button></a>
   </div>
 
   <script>
     function checkAnswer(button, correct) {
-      if (correct) {
-        button.style.backgroundColor = "green";
-      } else {
-        button.style.backgroundColor = "red";
-      }
+      let container = button.closest(".quiz-container");
+      let buttons = container.querySelectorAll("button");
+      let result = container.querySelector(".result");
+
+      buttons.forEach(btn => {
+        btn.disabled = true;
+        if (btn.innerText === "New Horizons") {
+          btn.classList.add("correct");
+        } else {
+          btn.classList.add("wrong");
+        }
+      });
+
+      result.innerText = correct ? " Resposta correta!" : " Resposta incorreta!";
     }
   </script>
+
 </body>
 </html>

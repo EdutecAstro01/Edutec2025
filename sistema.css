@@ -6,6 +6,10 @@
     --cor-hover: #8884d8;
     --texto-branco: #ffffff;
   }
+
+  * {
+    scroll-behavior: smooth;
+  }
   
   body {
     background: url('./assets/FUNDO.jpg') no-repeat center center fixed;
@@ -81,35 +85,24 @@
     width: 40rem;
     height: auto;
     transition: transform 0.3s;
+    padding: 5rem;
   }
   
 .sol img:hover {
-  transform: scale(1.08);
+  transform: scale(1.08); 
 }
 
-  .botao {
-    background-color: #7d4abf;
-    color: white;
-    border: none;
-    border-radius: 1.25rem;    
-    cursor: pointer;
-    padding: 0.5rem 5rem;
-    font-size: 1.25rem; 
-    margin-bottom: 2rem;  
-  }
 
   .planeta-direito {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    align-self: end;
   }
   .planeta-esquerdo {
     display: flex;
     align-items: center;
     justify-content: center;
-    align-self: start;
     gap: 2rem;
   }
 
@@ -132,51 +125,43 @@
  
 .mercurio {
   width: 18rem;
+  padding: 2.5rem;
 }
 
 .venus {
-  width: 22.5rem;
+  width: 25rem;
+  padding: 2.5rem;
 }
 
 .terra {
   width: 25rem;
+  padding: 2.5rem;
 }
 
 .marte {
-  width: 17.5rem;
+  width: 19rem;
+  padding: 2.5rem;
 }
 
 .jupiter {
   width: 45rem;
+  padding: 2.5rem;
   margin: top;
 }
 
 .saturno {
   width: 40rem;
+  padding: 2.5rem;
 }
 
 .urano {
   width: 30rem;
+  padding: 2.5rem;
 }
 
 .neturno {
-  width: 27.5rem;
-}
-
-button {
-  background: #7b3fc5;
-  color: white;
-  padding: 0.8rem 1.2rem;
-  border: none;
-  border-radius: 1.5rem;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: transform 0.3s, background 0.3s;
-}
-
-button:hover {
-  background: #a164f2;
-  transform: scale(1.08);
+  width: 25rem;
+  padding: 2.5rem;
 }
 
 footer {
@@ -196,7 +181,6 @@ footer {
 }
 
 .botao-voltar:hover {
-  background: #a164f2;
   transform: scale(1.1);
 }  
   
