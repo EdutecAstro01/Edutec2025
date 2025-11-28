@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./assets/FUNDO.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voltar {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.voltar button {
+    width: 3.75rem;
+    height: 3.75rem;
+    background: #7d3c98;
+    border: 0.25rem solid #a569bd; 
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.voltar p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(0.625rem);
+    padding: 3rem;
+    border-radius: 1.75rem;
+    width: 28rem;
+    text-align: center;
+}
+
+.icone-user {
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.campo {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.campo input {
+    width: 100%;
+    padding: 0.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 0.0625rem solid #ccc;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.campo label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1rem;
+    color: #ccc;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.campo input:focus + label,
+.campo input:valid + label {
+    top: -1.2rem;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.extras {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.extras a {
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.extras a:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 1rem;
+    background: #7d3c98;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+}

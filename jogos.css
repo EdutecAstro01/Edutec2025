@@ -1,26 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Shrikhand&display=swap');
+:root {
+  --cor-fundo: #0c0c1e;
+  --cor-primaria: #4b1e6e;
+  --cor-caixa: #6c3ea1;
+  --cor-secundaria: #9e83da;
+  --cor-destaque: #a060e8c4;
+  --cor-hover: #8884d8;
+  --texto-branco: #ffffff;
+  --cor-menu-bg: #532B77;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background: url('./assets/FUNDO.jpg') no-repeat center center fixed;
-  background-size: cover;      
-  background-position: top;    
+  background-size: cover;
+  background-position: top;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 56.25rem;          
-  flex-direction: column;    
+  min-height: 56.25rem;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  color: white;
 }
 
 
 header {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  padding: 1rem;
-  position: absolute; 
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 2rem;
+  position: absolute;
   top: 0;
   left: 0;
 }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5625rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5rem;
+  background-color: #2e1148;
+  transition: background 0.3s;
+  padding: 1rem 1.5rem; 
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active { background-color: var(--cor-hover); }
 
 .logo {
   height: 8rem;
@@ -31,6 +67,86 @@ header {
   transform: scale(1.08);
 }
 
+
+.scoreboard {
+  width: 20rem;
+  background: rgba(0, 0, 0, 0.45);
+  border: 2px solid #8e44ad;
+  box-shadow: 0 0 25px #9b59b6, inset 0 0 15px #7d3c98;
+  border-radius: 1rem;
+  padding: 1rem 1.2rem;
+  animation: fadeIn 1.5s ease forwards;
+  backdrop-filter: blur(8px);
+}
+
+.scoreboard h2 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  color: #b67bff;
+  text-shadow: 0 0 10px #b67bff;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.scoreboard ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.scoreboard li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(155, 89, 182, 0.15);
+  border: 1px solid rgba(155, 89, 182, 0.4);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  animation: slideIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+.scoreboard li:nth-child(1) { animation-delay: 0.2s; }
+.scoreboard li:nth-child(2) { animation-delay: 0.4s; }
+.scoreboard li:nth-child(3) { animation-delay: 0.6s; }
+.scoreboard li:nth-child(4) { animation-delay: 0.8s; }
+.scoreboard li:nth-child(5) { animation-delay: 1s; }
+
+.scoreboard li:hover {
+  background: rgba(155, 89, 182, 0.4);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #9b59b6;
+}
+
+.player {
+  font-weight: 700;
+  color: #b67bff;
+  text-shadow: 0 0 8px #b67bff;
+}
+
+.points {
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #7d3c98;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+
 .container {
   width: 37.5rem;
   height: 21.875rem;
@@ -39,17 +155,18 @@ header {
   text-align: center;
   color: white;
   padding: 1.25rem;
-  margin-top: 6rem; 
+  margin-top: 6rem;
 }
 
-
 .titulo img {
-  width: 25rem; 
+  width: 45rem;
   height: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .subtitulo {
-  font-size: 2.10rem;
+  font-size: 3.1rem;
   font-weight: bold;
   margin: 0.9375rem 0;
   font-family: 'Shrikhand', serif;
@@ -57,7 +174,10 @@ header {
 }
 
 .botoes {
-  margin-top: 1.25rem;
+  margin-top: 3.25rem;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente dentro do container */
+  gap: 1.5rem;  
 }
 
 .botoes a {
@@ -70,8 +190,50 @@ header {
   border-radius: 1.25rem;
   font-weight: bold;
   transition: 0.3s;
+  padding: 1.0rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 5rem;
 }
 
-.botoes a:hover {
+.login-btn {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.login-btn a {
+  display: inline-block;
+  text-decoration: none;
+  background: #7d3c98;
+  color: white;
+  padding: 1.1rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.login-btn a:hover {
   background: #9b59b6;
+  transform: scale(1.05);
+}
+
+
+.botoes a:hover {
+  background:#9e83da;
+}
+.botao-voltar {
+  background-color: var(--texto-branco);
+  color: var(--cor-caixa);
+  font-size: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 0 0.625rem #000;
+  transition: transform 0.3s;
+}
+
+
+.botao-voltar:hover {
+  transform: scale(1.1);
+  
 }

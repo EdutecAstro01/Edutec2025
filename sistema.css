@@ -19,6 +19,14 @@
     margin: 0;
     padding: 0;
   }
+
+  h1, h2, h3 {
+    font-family: 'Lora', 'Times New Roman', serif;
+    font-weight: 700;
+    font-style: italic; 
+    margin-bottom: 0.5rem;
+    margin-top: -4rem;
+  }
   
   header {
     background-color: var(--cor-primaria);
@@ -38,8 +46,6 @@
   .logo:hover {
     transform: scale(1.08);
   }
-
-  /* Barra de navegação*/
   
   nav ul {
     list-style: none;
@@ -96,22 +102,24 @@
   .planeta-direito {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     gap: 2rem;
   }
   .planeta-esquerdo {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     gap: 2rem;
   }
 
-.planeta-esquerdo{
-  flex-direction: row;
+.planeta-direito h2 {
+    
 }
 
-.planeta-direito {
-  flex-direction: row-reverse;
+.planeta-direito h2 {
+
 }
 
 .sistema img {

@@ -1,4 +1,8 @@
+import { express } from "express"
 
+const app + express ()
+
+app
 const botaoMapas = document.querySelector(".btn-mapas");
 const secaoMapas = document.querySelector("#mapas");
 

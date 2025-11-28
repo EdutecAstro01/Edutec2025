@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="./cadastro.css">
+</head>
+<body>
+
+    <!-- Botão Voltar -->
+    <div class="voltar">
+        <button onclick="history.back()">
+            <span>←</span>
+        </button>
+        <p>Voltar</p>
+    </div>
+
+    <!-- Card de Cadastro -->
+    <div class="card">
+        <div class="icone-user">
+            <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M6 21c0-4 3-7 6-7s6 3 6 7"></path>
+            </svg>
+        </div>
+
+        <h2>Cadastre-se</h2>
+
+        <form id="formCadastro">
+            <div class="campo">
+                <input type="text" id="nome" required>
+                <label>Nome</label>
+            </div>
+
+            <div class="campo">
+                <input type="email" id="email" required>
+                <label>E-mail</label>
+            </div>
+
+            <div class="campo">
+                <input type="password" id="senha" required>
+                <label>Senha</label>
+            </div>
+
+            <button type="submit" class="btn-cadastro">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Usuário</title>
+    <link rel="stylesheet" href="./login2.css">
+</head>
+<body>
+
+    <div class="voltar">
+        <button onclick="history.back()">
+            <span>←</span>
+        </button>
+        <p>Voltar</p>
+    </div>
+    
+
+    <div class="card">
+        <div class="icone-user">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M6 21c0-4 3-7 6-7s6 3 6 7"></path>
+            </svg>
+        </div>
+
+        <h2>Login do usuário</h2>
+
+        <form>
+            <div class="campo">
+                <input type="email" required>
+                <label>E-mail</label>
+            </div>
+
+            <div class="campo">
+                <input type="password" required>
+                <label>Senha</label>
+            </div>
+
+            <div class="extras">
+                <label>
+                    <input type="checkbox">
+                    Esqueceu a senha?
+                </label>
+                <a href="./login.html">cadastre-se</a>
+            </div>
+
+            <button class="btn-login">Login</button>
+        </form>
+    </div>
+
+</body>
+</html>
